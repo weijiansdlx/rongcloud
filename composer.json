@@ -1,11 +1,11 @@
 {
     "name": "gulltour/rongcloud",
     "type": "yii2-extension",
-    "description": "Yii2 extension for Mobile-Detect library",
+    "description": "Yii2 extension for RongCloud Im library",
     "keywords": ["yii2","extension","widget","rongcloud","im","api"],
     "homepage": "https://github.com/weijiansdlx/rongcloud",
     "license": "GPL-3.0+",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Wei Jian",
