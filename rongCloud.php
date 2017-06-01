@@ -37,6 +37,16 @@ class rongCloud extends Component
     }
 
     /**
+     * 获取用户信息方法
+     * @param $userId 用户 Id，最大长度 64 字节。是用户在 App 中的唯一标识码，必须保证在同一个 App 内不重复，重复的用户 Id 将被当作是同一用户。（必传）
+     * @return mixed
+     */
+    public function getUserInfo($userId)
+    {
+        return $this->client->user()->info($userId);
+    }
+
+    /**
      * 刷新用户信息方法
      * @param $userId 用户 Id，最大长度 64 字节。是用户在 App 中的唯一标识码，必须保证在同一个 App 内不重复，重复的用户 Id 将被当作是同一用户。（必传）
      * @param $name 用户名称，最大长度 128 字节。用来在 Push 推送时，显示用户的名称，刷新用户名称后 5 分钟内生效。（可选，提供即刷新，不提供忽略）
